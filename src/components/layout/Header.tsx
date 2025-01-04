@@ -14,9 +14,9 @@ export default function Header({ }: Props) {
         onChange={(e) => changeLanguage(e.target.value)}
         className='text-black'
       >
+        <option value="de">Deutsch</option>
         <option value="en">English</option>
         <option value="tr">Türkçe</option>
-        <option value="de">Deutsch</option>
       </select>
     </header>
   )

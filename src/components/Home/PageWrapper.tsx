@@ -5,6 +5,8 @@ import { Translations } from '@/types/Translations';
 import { fetchTranslations } from '@/app/api/translations';
 import TweetForm from './TweetForm';
 import TweetList from './TweetList';
+import Sidebar from '../Sidebar';
+import News from '../News';
 
 type Props = {}
 
@@ -35,13 +37,17 @@ export default function PageWrapper({ }: Props) {
   };
 
   return (
-    <main>
+    <>
       {loading || !translations ? (
         <p>Loading...</p>
-      ) : (<>
-        <TweetForm translations={translations} addTweet={addTweet} />
-        <TweetList tweets={tweets} translations={translations} />
-      </>)}
-    </main>
+      ) : (<main className='container mx-auto flex items-start justify-between'>
+        <Sidebar />
+        <div className='border-x'>
+          <TweetForm translations={translations} addTweet={addTweet} />
+          <TweetList tweets={tweets} translations={translations} />
+        </div>
+        <News />
+      </main>)}
+    </>
   )
 }

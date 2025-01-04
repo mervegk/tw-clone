@@ -4,7 +4,7 @@ import PageWrapper from "@/components/Home/PageWrapper";
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <Header />
+      {/* <Header /> */}
       <PageWrapper />
     </div>
   );
