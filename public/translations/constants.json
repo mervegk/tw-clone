@@ -1,0 +1,26 @@
+{
+  "en": {
+    "welcome": "Welcome to X",
+    "tweet_placeholder": "What's happening?",
+    "post_button": "Tweet",
+    "no_tweets": "No tweets yet. Be the first to share your thoughts!",
+    "likes": "Likes",
+    "retweets": "Retweets"
+  },
+  "tr": {
+    "welcome": "X'e Hoşgeldiniz",
+    "tweet_placeholder": "Neler oluyor?",
+    "post_button": "Tweetle",
+    "no_tweets": "Henüz tweet yok. Düşüncelerinizi ilk paylaşan siz olun!",
+    "likes": "Beğeniler",
+    "retweets": "Retweetler"
+  },
+  "de": {
+    "welcome": "Willkommen bei X",
+    "tweet_placeholder": "Was passiert gerade?",
+    "post_button": "Tweeten",
+    "no_tweets": "Noch keine Tweets. Seien Sie der Erste, der seine Gedanken teilt!",
+    "likes": "Gefällt mir",
+    "retweets": "Retweets"
+  }
+}
