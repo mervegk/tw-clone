@@ -5,7 +5,9 @@
     "notifications": "Notifications",
     "messages": "Messages",
     "bookmarks": "Bookmarks",
-    "retweets": "Retweets"
+    "profil": "Profile",
+    "more": "More",
+    "sign_in": "Sign In"
   },
   "tr": {
     "home": "Ana Sayfa",
@@ -13,7 +15,9 @@
     "notifications": "Bildirimler",
     "messages": "Mesajlar",
     "bookmarks": "Yer İşaretleri",
-    "retweets": "Retweetler"
+    "profil": "Profil",
+    "more": "Daha Fazla",
+    "sign_in": "Giriş Yap"
   },
   "de": {
     "home": "Startseite",
@@ -21,6 +25,8 @@
     "notifications": "Mitteilungen",
     "messages": "Nachrichten",
     "bookmarks": "Lesezeichen",
-    "retweets": "Retweets"
+    "profil": "Profil",
+    "more": "Mehr",
+    "sign_in": "Anmelden"
   }
 }

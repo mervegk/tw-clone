@@ -1,18 +1,20 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import { useLanguage } from '@/context/Language'
-import { Translations } from '@/types/Translations';
-import { fetchTranslations } from '@/app/api/translations';
+import { Translations } from '@/types/translations/Translations';
+import { fetchTranslations, fetchMenuTranslations } from '@/app/api/translations';
 import TweetForm from './TweetForm';
 import TweetList from './TweetList';
 import Sidebar from '../Sidebar';
 import News from '../News';
+import { Menu } from '@/types/translations/Menu';
 
 type Props = {}
 
 export default function PageWrapper({ }: Props) {
   const { language } = useLanguage()
   const [translations, setTranslations] = useState<Translations | null>(null);
+  const [menuTranslations, setMenuTranslations] = useState<Menu | null>(null);
   const [tweets, setTweets] = useState<{ content: string; likes: number; retweets: number }[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -21,7 +23,10 @@ export default function PageWrapper({ }: Props) {
       setLoading(true);
       try {
         const data = await fetchTranslations(language);
+        const menuData = await fetchMenuTranslations(language)
         setTranslations(data);
+        setMenuTranslations(menuData);
+
       } catch (error) {
         console.error('Error fetching translations:', error);
       } finally {
@@ -38,11 +43,11 @@ export default function PageWrapper({ }: Props) {
 
   return (
     <>
-      {loading || !translations ? (
+      {loading || !translations || !menuTranslations ? (
         <p>Loading...</p>
       ) : (<main className='container mx-auto flex justify-between'>
         <div className='hidden: sm:inline border-r h-screen'>
-          <Sidebar />
+          <Sidebar translations={menuTranslations} />
         </div>
         <div>
           <TweetForm translations={translations} addTweet={addTweet} />

@@ -1,5 +1,5 @@
 'use client';
-import { Translations } from "@/types/Translations";
+import { Translations } from "@/types/translations/Translations";
 import { Tweet } from "@/types/Tweet";
 
 interface TweetListProps {

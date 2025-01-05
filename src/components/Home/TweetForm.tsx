@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Translations } from '@/types/Translations';
+import { Translations } from '@/types/translations/Translations';
 
 interface TweetFormProps {
   translations: Translations;
