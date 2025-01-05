@@ -40,13 +40,17 @@ export default function PageWrapper({ }: Props) {
     <>
       {loading || !translations ? (
         <p>Loading...</p>
-      ) : (<main className='container mx-auto flex items-start justify-between'>
-        <Sidebar />
-        <div className='border-x'>
+      ) : (<main className='container mx-auto flex justify-between'>
+        <div className='hidden: sm:inline border-r h-screen'>
+          <Sidebar />
+        </div>
+        <div>
           <TweetForm translations={translations} addTweet={addTweet} />
           <TweetList tweets={tweets} translations={translations} />
         </div>
-        <News />
+        <div>
+          <News />
+        </div>
       </main>)}
     </>
   )

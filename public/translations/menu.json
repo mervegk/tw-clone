@@ -1,0 +1,26 @@
+{
+  "en": {
+    "home": "Home",
+    "explore": "What's happening?",
+    "notifications": "Notifications",
+    "messages": "Messages",
+    "bookmarks": "Bookmarks",
+    "retweets": "Retweets"
+  },
+  "tr": {
+    "home": "Ana Sayfa",
+    "explore": "Explore",
+    "notifications": "Bildirimler",
+    "messages": "Mesajlar",
+    "bookmarks": "Yer İşaretleri",
+    "retweets": "Retweetler"
+  },
+  "de": {
+    "home": "Startseite",
+    "explore": "Entdecken",
+    "notifications": "Mitteilungen",
+    "messages": "Nachrichten",
+    "bookmarks": "Lesezeichen",
+    "retweets": "Retweets"
+  }
+}
